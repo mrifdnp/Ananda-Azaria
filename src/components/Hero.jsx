@@ -1,4 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
+import React from 'react'
+
 import profilePic from "../assets/profile.png";
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";

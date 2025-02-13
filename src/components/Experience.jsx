@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { useState } from "react";
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
