@@ -1,12 +1,17 @@
-
 import React from 'react'
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import aboutImg from "../assets/about.png";
 import letter from "../assets/letter.png";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const audioRef = useRef(new Audio("https://framerusercontent.com/assets/a63Qvt7HY9l3WiXmUtsczXXf7Q0.mp3"));
+
+  const handleOpen = () => {
+    setIsOpen(true);
+    audioRef.current.play();
+  };
 
   return (
     <div className="border-b border-neutral-900 pb-10 min-h-screen">
@@ -27,7 +32,7 @@ const About = () => {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             whileHover={{ scale: 1.2 }}
-            onClick={() => setIsOpen(true)}
+            onClick={handleOpen}
           />
         </motion.div>
       </div>

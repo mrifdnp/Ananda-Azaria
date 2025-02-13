@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react'
 
 import profilePic from "../assets/profile.png";
 import img1 from "../assets/1.jpg";
@@ -8,31 +7,34 @@ import img3 from "../assets/3.jpg";
 import img4 from "../assets/4.jpg";
 import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
+import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 
+// Array gambar yang akan ditampilkan
 const images = [profilePic, img1, img2, img3, img4, img5, img6];
-const audioSrc = "https://framerusercontent.com/assets/a63Qvt7HY9l3WiXmUtsczXXf7Q0.mp3";
 
 const Hero = () => {
   const [topZIndex, setTopZIndex] = useState(images.length);
   const [positions, setPositions] = useState(
     images.map(() => ({
-      x: Math.random() * 200 - 100,
-      y: Math.random() * 200 - 100,
-      zIndex: 1,
-      rotate: Math.random() * 30 - 15,
+      x: Math.random() * 200 - 100, // Posisi awal acak X
+      y: Math.random() * 200 - 100, // Posisi awal acak Y
+      zIndex: 1, // Default zIndex rendah
+      rotate: Math.random() * 30 - 15, // Rotasi acak antara -15 hingga 15 derajat
     }))
   );
 
   const bringToFront = (index) => {
     setTopZIndex(topZIndex + 1);
     setPositions((prev) =>
-      prev.map((pos, i) => (i === index ? { ...pos, zIndex: topZIndex + 1 } : pos))
+      prev.map((pos, i) =>
+        i === index ? { ...pos, zIndex: topZIndex + 1 } : pos
+      )
     );
   };
 
   const containerRef = useRef(null);
   const [constraints, setConstraints] = useState(null);
-  const audioRef = useRef(new Audio(audioSrc));
 
   useEffect(() => {
     if (containerRef.current) {
@@ -46,15 +48,9 @@ const Hero = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const playAudio = () => {
-      audioRef.current.play().catch((error) => console.log("Audio play failed", error));
-    };
-    window.addEventListener("click", playAudio, { once: true });
-    return () => window.removeEventListener("click", playAudio);
-  }, []);
-
-  const fullText = "On this special day, I just want to say one thing: I love you today, tomorrow, and forever";
+  // Efek mengetik untuk teks
+  const fullText =
+    " On this special day, I just want to say one thing: I love you today, tomorrow, and forever";
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -66,7 +62,8 @@ const Hero = () => {
       } else {
         clearInterval(interval);
       }
-    }, 50);
+    }, 50); // Kecepatan mengetik (50ms per karakter)
+
     return () => clearInterval(interval);
   }, []);
 
@@ -81,6 +78,7 @@ const Hero = () => {
             <motion.span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-5xl tracking-tight text-transparent">
               Happy Valentine's Day
             </motion.span>
+            {/* Efek mengetik ditampilkan di sini */}
             <motion.p className="max-w-xl py-5 font-light tracking-tighter">
               {displayedText}
               <motion.span
@@ -94,16 +92,20 @@ const Hero = () => {
           </div>
         </div>
 
-        <div ref={containerRef} className="w-full lg:w-1/2 lg:p-8 relative h-[400px] flex justify-center">
+        {/* Container untuk gambar-gambar dengan drag constraints */}
+        <div
+          ref={containerRef}
+          className="w-full lg:w-1/2 lg:p-8 relative h-[400px] flex justify-center"
+        >
           {constraints &&
             images.map((imgSrc, index) => (
               <motion.img
                 key={index}
                 className="bg-white shadow-lg p-2 rounded-2xl w-[250px] h-[250px] object-cover cursor-pointer absolute"
                 drag
-                dragConstraints={constraints}
+                dragConstraints={constraints} // Batas pergerakan
                 initial={{ x: positions[index].x, y: positions[index].y, rotate: positions[index].rotate }}
-                animate={{ rotate: positions[index].rotate }}
+                animate={{ rotate: positions[index].rotate }} // Rotasi tetap ada setelah drag
                 style={{ zIndex: positions[index].zIndex }}
                 onMouseDown={() => bringToFront(index)}
                 src={imgSrc}
