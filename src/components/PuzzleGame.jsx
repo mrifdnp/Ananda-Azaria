@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import img1 from "../assets/Puzzle/1.jpg";

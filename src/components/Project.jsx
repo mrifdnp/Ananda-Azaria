@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable no-undef */
 import img1 from "../assets/1.jpg";
 
 const GRID_SIZE = 3; // 3x3 grid
