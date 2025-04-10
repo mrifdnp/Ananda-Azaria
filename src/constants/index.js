@@ -57,6 +57,25 @@ import pm9 from "../assets/Pasar Malam/PM (9).jpg";
 import pm10 from "../assets/Pasar Malam/PM (10).jpg";
 import pm11 from "../assets/Pasar Malam/PM (11).jpg";
 
+import sp8 from "../assets/SELFPHOTO/RIFQI-8.jpg";
+import sp21 from "../assets/SELFPHOTO/RIFQI-21.jpg";
+import sp23 from "../assets/SELFPHOTO/RIFQI-23.jpg";
+import sp25 from "../assets/SELFPHOTO/RIFQI-25.jpg";
+import sp26 from "../assets/SELFPHOTO/RIFQI-26.jpg";
+import sp38 from "../assets/SELFPHOTO/RIFQI-38.jpg";
+import sp39 from "../assets/SELFPHOTO/RIFQI-39.jpg";
+import sp45 from "../assets/SELFPHOTO/RIFQI-45.jpg";
+import sp46 from "../assets/SELFPHOTO/RIFQI-46.jpg";
+import sp47 from "../assets/SELFPHOTO/RIFQI-47.jpg";
+import sp48 from "../assets/SELFPHOTO/RIFQI-48.jpg";
+import sp54 from "../assets/SELFPHOTO/RIFQI-54.jpg";
+import sp62 from "../assets/SELFPHOTO/RIFQI-62.jpg";
+import sp66 from "../assets/SELFPHOTO/RIFQI-66.jpg";
+import sp70 from "../assets/SELFPHOTO/RIFQI-70.jpg";
+import sp76 from "../assets/SELFPHOTO/RIFQI-76.jpg";
+import sp78 from "../assets/SELFPHOTO/RIFQI-78.jpg";
+import sp92 from "../assets/SELFPHOTO/RIFQI-92.jpg";
+import sp95 from "../assets/SELFPHOTO/RIFQI-95.jpg";
 
 
 
@@ -80,17 +99,25 @@ export const EXPERIENCES = [
     media: [bogor1, bogor2, bogor3, bogor4, bogor5, bogor6, bogor7, bogor8, bogor9, bogor10, bogor11, bogor12, bogor13, bogor14, bogor15, bogor16, bogor17, bogor18, bogor19, vid1, vid2, vid3],
   },
   {
-    year: "March 5",
+    year: "March 29",
     role: "Manunggal",
     company: "Pasar Malam",
     description: "",
     media: [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8, pm9, pm10, pm11],
   },
   {
+    year: "April 4",
+    role: "Selfie",
+    company: "Selfie",
+    description: `We took a selfphoto together, and I think it turned out great!`,
+    media: [sp8, sp21, sp23, sp25, sp26, sp38, sp39, sp45, sp46, sp47, sp48, sp54, sp62, sp66, sp70, sp76, sp78, sp92, sp95],
+  },
+  {
     year: "To be continued",
     role: "Would you like to create more moments with me??",
 
   },
+
 ];
 
 
