@@ -45,6 +45,18 @@ import vid1 from "../assets/Bogor/vid/1 (1).mp4";
 import vid2 from "../assets/Bogor/vid/1 (2).mp4";
 import vid3 from "../assets/Bogor/vid/1 (3).mp4";
 
+import pm1 from "../assets/PM (1).jpg";
+import pm2 from "../assets/PM (2).jpg";
+import pm3 from "../assets/PM (3).jpg";
+import pm4 from "../assets/PM (4).jpg";
+import pm5 from "../assets/PM (5).jpg";
+import pm6 from "../assets/PM (6).jpg";
+import pm7 from "../assets/PM (7).jpg";
+import pm8 from "../assets/PM (8).jpg";
+import pm9 from "../assets/PM (9).jpg";
+import pm10 from "../assets/PM (10).jpg";
+import pm11 from "../assets/PM (11).jpg";
+
 
 
 
@@ -67,6 +79,13 @@ export const EXPERIENCES = [
     company: "Penalama Coffe, TimeZone, and more",
     description: `We had an amazing time in Bogor, exploring different places and making unforgettable memories. We started our journey with a relaxing coffee break at Penalama Coffee, enjoying the cozy ambiance and great conversations. Then, we had a blast at TimeZone, immersing ourselves in fun arcade games and exciting challenges.`,
     media: [bogor1, bogor2, bogor3, bogor4, bogor5, bogor6, bogor7, bogor8, bogor9, bogor10, bogor11, bogor12, bogor13, bogor14, bogor15, bogor16, bogor17, bogor18, bogor19, vid1, vid2, vid3],
+  },
+  {
+    year: "March 5",
+    role: "Manunggal",
+    company: "Pasar Malam",
+    description: ``,
+    media: [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8, pm9, pm10, pm11],
   },
   {
     year: "To be continued",
