@@ -45,18 +45,17 @@ import vid1 from "../assets/Bogor/vid/1 (1).mp4";
 import vid2 from "../assets/Bogor/vid/1 (2).mp4";
 import vid3 from "../assets/Bogor/vid/1 (3).mp4";
 
-import pm1 from "../assets/PM (1).jpg";
-import pm2 from "../assets/PM (2).jpg";
-import pm3 from "../assets/PM (3).jpg";
-import pm4 from "../assets/PM (4).jpg";
-import pm5 from "../assets/PM (5).jpg";
-import pm6 from "../assets/PM (6).jpg";
-import pm7 from "../assets/PM (7).jpg";
-import pm8 from "../assets/PM (8).jpg";
-import pm9 from "../assets/PM (9).jpg";
-import pm10 from "../assets/PM (10).jpg";
-import pm11 from "../assets/PM (11).jpg";
-
+import pm1 from "../assets/Pasar Malam/PM (1).jpg";
+import pm2 from "../assets/Pasar Malam/PM (2).jpg";
+import pm3 from "../assets/Pasar Malam/PM (3).jpg";
+import pm4 from "../assets/Pasar Malam/PM (4).jpg";
+import pm5 from "../assets/Pasar Malam/PM (5).jpg";
+import pm6 from "../assets/Pasar Malam/PM (6).jpg";
+import pm7 from "../assets/Pasar Malam/PM (7).jpg";
+import pm8 from "../assets/Pasar Malam/PM (8).jpg";
+import pm9 from "../assets/Pasar Malam/PM (9).jpg"; 
+import pm10 from "../assets/Pasar Malam/PM (10).jpg";
+import pm11 from "../assets/Pasar Malam/PM (11).jpg";
 
 
 
@@ -84,7 +83,7 @@ export const EXPERIENCES = [
     year: "March 5",
     role: "Manunggal",
     company: "Pasar Malam",
-    description: ``,
+    description: "",
     media: [pm1, pm2, pm3, pm4, pm5, pm6, pm7, pm8, pm9, pm10, pm11],
   },
   {
