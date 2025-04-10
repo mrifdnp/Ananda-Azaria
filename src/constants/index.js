@@ -57,25 +57,25 @@ import pm9 from "../assets/Pasar Malam/PM (9).jpg";
 import pm10 from "../assets/Pasar Malam/PM (10).jpg";
 import pm11 from "../assets/Pasar Malam/PM (11).jpg";
 
-import sp8 from "../assets/SELFPHOTO/RIFQI-8.jpg";
-import sp21 from "../assets/SELFPHOTO/RIFQI-21.jpg";
-import sp23 from "../assets/SELFPHOTO/RIFQI-23.jpg";
-import sp25 from "../assets/SELFPHOTO/RIFQI-25.jpg";
-import sp26 from "../assets/SELFPHOTO/RIFQI-26.jpg";
-import sp38 from "../assets/SELFPHOTO/RIFQI-38.jpg";
-import sp39 from "../assets/SELFPHOTO/RIFQI-39.jpg";
-import sp45 from "../assets/SELFPHOTO/RIFQI-45.jpg";
-import sp46 from "../assets/SELFPHOTO/RIFQI-46.jpg";
-import sp47 from "../assets/SELFPHOTO/RIFQI-47.jpg";
-import sp48 from "../assets/SELFPHOTO/RIFQI-48.jpg";
-import sp54 from "../assets/SELFPHOTO/RIFQI-54.jpg";
-import sp62 from "../assets/SELFPHOTO/RIFQI-62.jpg";
-import sp66 from "../assets/SELFPHOTO/RIFQI-66.jpg";
-import sp70 from "../assets/SELFPHOTO/RIFQI-70.jpg";
-import sp76 from "../assets/SELFPHOTO/RIFQI-76.jpg";
-import sp78 from "../assets/SELFPHOTO/RIFQI-78.jpg";
-import sp92 from "../assets/SELFPHOTO/RIFQI-92.jpg";
-import sp95 from "../assets/SELFPHOTO/RIFQI-95.jpg";
+import sp8 from "../assets/SELFPHOTO/RIFQI-8.JPG";
+import sp21 from "../assets/SELFPHOTO/RIFQI-21.JPG";
+import sp23 from "../assets/SELFPHOTO/RIFQI-23.JPG";
+import sp25 from "../assets/SELFPHOTO/RIFQI-25.JPG";
+import sp26 from "../assets/SELFPHOTO/RIFQI-26.JPG";
+import sp38 from "../assets/SELFPHOTO/RIFQI-38.JPG";
+import sp39 from "../assets/SELFPHOTO/RIFQI-39.JPG";
+import sp45 from "../assets/SELFPHOTO/RIFQI-45.JPG";
+import sp46 from "../assets/SELFPHOTO/RIFQI-46.JPG";
+import sp47 from "../assets/SELFPHOTO/RIFQI-47.JPG";
+import sp48 from "../assets/SELFPHOTO/RIFQI-48.JPG";
+import sp54 from "../assets/SELFPHOTO/RIFQI-54.JPG";
+import sp62 from "../assets/SELFPHOTO/RIFQI-62.JPG";
+import sp66 from "../assets/SELFPHOTO/RIFQI-66.JPG";
+import sp70 from "../assets/SELFPHOTO/RIFQI-70.JPG";
+import sp76 from "../assets/SELFPHOTO/RIFQI-76.JPG";
+import sp78 from "../assets/SELFPHOTO/RIFQI-78.JPG";
+import sp92 from "../assets/SELFPHOTO/RIFQI-92.JPG";
+import sp95 from "../assets/SELFPHOTO/RIFQI-95.JPG";
 
 
 
